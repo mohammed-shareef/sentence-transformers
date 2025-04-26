@@ -36,5 +36,5 @@ once deployed to an azure function use the function url as the value for transfo
       ENABLE_MODULES: "text2vec-transformers"
       TRANSFORMERS_INFERENCE_API: "https://my-function-url"
 ```
-The embeddings from this API can be used as an inference point for the weaviate image [https://gist.github.com/mohammed-shareef/16869cdacc4bd9bdf46c0878cdb192dc.js](https://gist.github.com/mohammed-shareef/16869cdacc4bd9bdf46c0878cdb192dc#file-docker-compose-yml)
+The embeddings from this API can be used as an inference point for the weaviate image https://gist.github.com/mohammed-shareef/16869cdacc4bd9bdf46c0878cdb192dc
 
