@@ -1,7 +1,7 @@
 
 ### Sentence Transformer API
 
-This repository contains an Azure Function with an HTTP trigger serving a sentence transformer API for MiniLM-L6-v2 embeddings. 
+This repository contains an Azure Function with an HTTP trigger serving a sentence transformer API for the MiniLM-L6-v2 embedding model. 
 This is built to be used by the Weaviate vector database & can be used as an end point for the text2vec-transformers. 
 
 The AMD64 docker image for the transformer (semitechnologies/transformers-inference:sentence-transformers-all-MiniLM-L6-v2) was taking
@@ -27,6 +27,7 @@ The function contains 2 end points
     ```
 
 #### Usage
+
 once deployed to an azure function use the function url as the value for transforrmer inference api 
 
 ```yaml
@@ -35,4 +36,5 @@ once deployed to an azure function use the function url as the value for transfo
       ENABLE_MODULES: "text2vec-transformers"
       TRANSFORMERS_INFERENCE_API: "https://my-function-url"
 ```
+The embeddings from this API can be used as an inference point for the weaviate image [https://gist.github.com/mohammed-shareef/16869cdacc4bd9bdf46c0878cdb192dc.js](https://gist.github.com/mohammed-shareef/16869cdacc4bd9bdf46c0878cdb192dc#file-docker-compose-yml)
 
