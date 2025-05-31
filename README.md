@@ -37,4 +37,6 @@ once deployed to an azure function use the function url as the value for transfo
       TRANSFORMERS_INFERENCE_API: "https://my-function-url"
 ```
 The embeddings from this API can be used as an inference point for the weaviate image https://gist.github.com/mohammed-shareef/16869cdacc4bd9bdf46c0878cdb192dc
+When using text2vec-transformers and providing a transformer inference URL, Weaviate can automatically generate embeddings when inserting text into the database
+so they dont need to be added manually.
 
